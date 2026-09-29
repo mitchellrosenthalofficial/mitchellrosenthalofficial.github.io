@@ -6,7 +6,7 @@ window.portfolioDescriptions[0] = `
   <h3>Project Overview</h3>
 
   <p>
-    I simulated a subscription business that offers guitar lessons and has several ongoing marketing campaigns. For added realism, I built my own data source (a FastAPI application) that updates daily and includes trends, randomness, and data quality issues. Then, I built an ELT pipeline from scratch that automatically extracts raw data from the API, validates and saves it in an S3 bucket, copies it to the PostgreSQL database's staging tables, cleans it using version-controlled SQL queries, and then moves it to its final location (the "analytics" tables). I used GitHub Actions workflows for automation.
+    I simulated a subscription business that offers guitar lessons and has several ongoing marketing campaigns. For added realism, I built my own data source (a FastAPI application) that updates daily and includes trends, randomness, and data quality issues. Then, I built an ELT pipeline (see <a href="https://github.com/datacookbooks/guitar-lessons-marketing-analytics">repo</a>) from scratch that automatically extracts raw data from the API, validates and saves it in an S3 bucket, copies it to the PostgreSQL database's staging tables, cleans it using version-controlled SQL queries, and then moves it to its final location (the "analytics" tables). I used GitHub Actions workflows for automation.
   </p>
 
   <p>
