@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project · Mitchell Rosenthal</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="portfolio-concept">
+      <header>
+        <div class="shell">
+          <div class="brand">
+            Mitchell Rosenthal<span style="color: var(--accent)">.</span>
+          </div>
+          <nav aria-label="Main navigation">
+            <a href="index.html">About</a>
+            <a href="projects.html" class="active">Projects</a>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <!-- Project detail page: select a project using the URL query string -->
+        <section class="shell detail">
+          <a class="back" href="projects.html">
+            ← All projects
+          </a>
+
+          <div class="detail-head">
+            <div>
+              <div class="eyebrow" id="pc-kicker">Project 01 / Marketing Data Pipeline & Dashboard</div>
+              <h2 id="pc-title">Marketing Data Pipeline & Dashboard</h2>
+              <p id="pc-subtitle">
+                An automated pipeline and interactive Power BI report to monitor marketing campaigns.
+              </p>
+            </div>
+            <div class="meta" id="pc-meta">Python · SQL · AWS · Power BI</div>
+          </div>
+
+          <div class="tabs" role="tablist" aria-label="Project content">
+            <a
+              class="active"
+              role="tab"
+              id="pc-final-tab"
+              aria-controls="pc-final"
+              aria-selected="true"
+              href="#final-product"
+            >
+              Final Product
+            </a>
+            <a
+              role="tab"
+              id="pc-description-tab"
+              aria-controls="pc-description"
+              aria-selected="false"
+              href="#description"
+            >
+              Description
+            </a>
+          </div>
+
+          <div id="pc-final" role="tabpanel" aria-labelledby="pc-final-tab">
+            <div class="embed-caption">
+              <strong>Interactive dashboard</strong>
+              <span>Power BI report</span>
+            </div>
+            <iframe
+              class="embed-frame"
+              id="pc-iframe"
+              title="Marketing Analytics Power BI report"
+              loading="lazy"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div
+            id="pc-description"
+            role="tabpanel"
+            aria-labelledby="pc-description-tab"
+            hidden
+          >
+            <!-- Filled from the matching file in descriptions/ -->
+            <div class="desc" id="pc-description-content"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="shell">
+          <span>Mitchell Rosenthal · Data analysis portfolio</span>
+          <span>About &nbsp; / &nbsp; Projects</span>
+        </div>
+      </footer>
+    </div>
+    <script src="descriptions/marketing-analytics.js"></script>
+    <script src="descriptions/project-02.js"></script>
+    <script src="descriptions/project-03.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
