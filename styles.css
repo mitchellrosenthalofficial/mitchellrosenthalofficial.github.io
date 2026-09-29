@@ -46,6 +46,12 @@ body { margin: 0; }
     #portfolio-concept .desc p {font-size:15px;margin-bottom:21px}
     #portfolio-concept .desc ul, #portfolio-concept .desc ol {color:var(--muted);font-size:15px;line-height:1.65;margin:0 0 21px;padding-left:24px}
     #portfolio-concept .desc li + li {margin-top:8px}
+    #portfolio-concept .desc a {
+        text-decoration: underline;
+        text-decoration-color: var(--accent);
+        text-underline-offset: 3px;
+        text-decoration-thickness: 2px;
+    }
     #portfolio-concept .desc dl {display:grid;grid-template-columns:145px 1fr;gap:13px 20px;border-top:1px solid var(--line);padding-top:22px;margin:25px 0}
     #portfolio-concept .desc dt {color:var(--muted);font-size:12px}
     #portfolio-concept .desc dd {margin:0;font-size:13px}
